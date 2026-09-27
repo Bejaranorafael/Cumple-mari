@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -60,7 +59,7 @@
         
         <h1 class="romantic-font text-6xl md:text-7xl text-pink-600 mb-4 drop-shadow-md">¡Feliz Cumpleaños, Mi Amor!</h1>
         <p class="text-lg md:text-xl font-light text-gray-700 max-w-xl mx-auto mb-6">
-            Este pequeño rincón digital es solo una muestra de todo lo que te amo y lo feliz que me hace tenerte en mi vida.
+            13 años caminando de la mano, y cada día a tu lado sigue siendo mi regalo favorito.
         </p>
         <button onclick="lanzarConfeti()" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105">
             ¡Toca para celebrar! 🎉
@@ -69,22 +68,22 @@
 
     <!-- Nuestra Historia (Timeline) -->
     <section class="max-w-2xl mx-auto px-4 py-8 w-full">
-        <h2 class="romantic-font text-4xl text-center text-pink-600 mb-8">Nuestros Momentos Especiales</h2>
+        <h2 class="romantic-font text-4xl text-center text-pink-600 mb-8">Nuestros 13 Años Juntos</h2>
         <div class="border-l-4 border-pink-300 ml-4 pl-6 space-y-8">
             <div class="relative">
                 <span class="absolute -left-[35px] top-0 bg-pink-500 w-5 h-5 rounded-full border-4 border-white"></span>
-                <h3 class="font-semibold text-lg text-pink-700">El día que nos conocimos</h3>
-                <p class="text-sm text-gray-600 mt-1">El inicio de la mejor aventura de mi vida.</p>
+                <h3 class="font-semibold text-lg text-pink-700">El inicio de todo</h3>
+                <p class="text-sm text-gray-600 mt-1">El día que empezamos a escribir esta hermosa historia de amor.</p>
             </div>
             <div class="relative">
                 <span class="absolute -left-[35px] top-0 bg-pink-500 w-5 h-5 rounded-full border-4 border-white"></span>
-                <h3 class="font-semibold text-lg text-pink-700">Nuestra primera cita</h3>
-                <p class="text-sm text-gray-600 mt-1">Nervios, risas y la certeza de que quería seguir viéndote.</p>
+                <h3 class="font-semibold text-lg text-pink-700">Años de crecer juntos</h3>
+                <p class="text-sm text-gray-600 mt-1">Superando retos, riendo sin parar y coleccionando momentos inolvidables.</p>
             </div>
             <div class="relative">
                 <span class="absolute -left-[35px] top-0 bg-pink-500 w-5 h-5 rounded-full border-4 border-white"></span>
                 <h3 class="font-semibold text-lg text-pink-700">Hoy y siempre</h3>
-                <p class="text-sm text-gray-600 mt-1">Construyendo recuerdos inolvidables juntos cada día.</p>
+                <p class="text-sm text-gray-600 mt-1">Celebrando tu vida y 13 años de un amor que no deja de crecer.</p>
             </div>
         </div>
     </section>
@@ -102,7 +101,7 @@
                         <h3 class="font-semibold text-pink-700">Tu sonrisa</h3>
                     </div>
                     <div class="flip-card-back absolute w-full h-full bg-pink-500 text-white rounded-2xl flex items-center justify-center p-6">
-                        <p class="text-sm">Tiene el poder de alegrar incluso mis días más grises.</p>
+                        <p class="text-sm">Sigue teniendo el poder de alegrar incluso mis días más grises después de tanto tiempo.</p>
                     </div>
                 </div>
             </div>
@@ -111,10 +110,10 @@
                 <div class="flip-card-inner relative w-full h-full text-center rounded-2xl shadow-md">
                     <div class="flip-card-front absolute w-full h-full glass rounded-2xl flex flex-col items-center justify-center p-6">
                         <span class="text-3xl mb-2">💫</span>
-                        <h3 class="font-semibold text-pink-700">Tu bondad</h3>
+                        <h3 class="font-semibold text-pink-700">Nuestra paciencia</h3>
                     </div>
                     <div class="flip-card-back absolute w-full h-full bg-pink-500 text-white rounded-2xl flex items-center justify-center p-6">
-                        <p class="text-sm">La forma en que tratas al mundo me inspira a ser mejor persona.</p>
+                        <p class="text-sm">Construir 13 años de complicidad es el mayor orgullo que compartimos.</p>
                     </div>
                 </div>
             </div>
@@ -123,36 +122,47 @@
                 <div class="flip-card-inner relative w-full h-full text-center rounded-2xl shadow-md">
                     <div class="flip-card-front absolute w-full h-full glass rounded-2xl flex flex-col items-center justify-center p-6">
                         <span class="text-3xl mb-2">🥰</span>
-                        <h3 class="font-semibold text-pink-700">Nuestra complicidad</h3>
+                        <h3 class="font-semibold text-pink-700">Eres mi hogar</h3>
                     </div>
                     <div class="flip-card-back absolute w-full h-full bg-pink-500 text-white rounded-2xl flex items-center justify-center p-6">
-                        <p class="text-sm">Contigo puedo ser 100% yo mismo sin filtros ni miedos.</p>
+                        <p class="text-sm">Contigo puedo ser 100% yo mismo sin filtros ni miedos desde el primer día.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Galería / Álbum de fotos estilo Polaroid -->
-    <section class="max-w-4xl mx-auto px-4 py-12 w-full text-center">
-        <h2 class="romantic-font text-4xl text-pink-600 mb-8">Nuestros Recuerdos</h2>
+    <!-- Galería / Álbum de fotos (5 fotos) -->
+    <section class="max-w-5xl mx-auto px-4 py-12 w-full text-center">
+        <h2 class="romantic-font text-4xl text-pink-600 mb-8">Nuestros Recuerdos (13 Años)</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div class="bg-white p-4 pb-6 rounded shadow-md transform rotate-1 hover:rotate-0 transition">
                 <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-400 text-sm overflow-hidden">
-                    <!-- Puedes cambiar este enlace por una foto tuya subida a GitHub -->
-                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80" alt="Foto recuerdo" class="w-full h-full object-cover">
+                    <img src="foto1.jpg" alt="Foto recuerdo 1" class="w-full h-full object-cover">
                 </div>
-                <p class="romantic-font text-xl text-gray-700 mt-3">Mi lugar favorito</p>
+                <p class="romantic-font text-xl text-gray-700 mt-3">Nuestros inicios</p>
             </div>
             <div class="bg-white p-4 pb-6 rounded shadow-md transform -rotate-1 hover:rotate-0 transition">
                 <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-400 text-sm overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80" alt="Foto recuerdo" class="w-full h-full object-cover">
+                    <img src="foto2.jpg" alt="Foto recuerdo 2" class="w-full h-full object-cover">
                 </div>
-                <p class="romantic-font text-xl text-gray-700 mt-3">Momentos felices</p>
+                <p class="romantic-font text-xl text-gray-700 mt-3">Aventuras juntos</p>
             </div>
             <div class="bg-white p-4 pb-6 rounded shadow-md transform rotate-2 hover:rotate-0 transition">
                 <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-400 text-sm overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=600&q=80" alt="Foto recuerdo" class="w-full h-full object-cover">
+                    <img src="foto3.jpg" alt="Foto recuerdo 3" class="w-full h-full object-cover">
+                </div>
+                <p class="romantic-font text-xl text-gray-700 mt-3">Complicidad pura</p>
+            </div>
+            <div class="bg-white p-4 pb-6 rounded shadow-md transform -rotate-2 hover:rotate-0 transition">
+                <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-400 text-sm overflow-hidden">
+                    <img src="foto4.jpg" alt="Foto recuerdo 4" class="w-full h-full object-cover">
+                </div>
+                <p class="romantic-font text-xl text-gray-700 mt-3">Momentos inolvidables</p>
+            </div>
+            <div class="bg-white p-4 pb-6 rounded shadow-md transform rotate-1 hover:rotate-0 transition sm:col-span-2 md:col-span-1">
+                <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-400 text-sm overflow-hidden">
+                    <img src="foto5.jpg" alt="Foto recuerdo 5" class="w-full h-full object-cover">
                 </div>
                 <p class="romantic-font text-xl text-gray-700 mt-3">Te amo muchísimo</p>
             </div>
@@ -181,7 +191,7 @@
 
     <!-- Footer -->
     <footer class="text-center py-8 text-sm text-gray-500">
-        <p>Hecho con todo mi amor para ti ❤️</p>
+        <p>Hecho con todo mi amor para ti en nuestros 13 años ❤️</p>
     </footer>
 
     <script>
