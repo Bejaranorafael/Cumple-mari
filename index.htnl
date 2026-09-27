@@ -1,1 +1,204 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, mi amor! ❤️</title>
+    <!-- Tailwind CSS para el diseño rápido y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat y Dancing Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Confetti JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #fce7f3 0%, #ffe4e6 50%, #fbcfe8 100%);
+            color: #4b5563;
+            overflow-x: hidden;
+        }
+        .romantic-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .heart-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+        }
+        .flip-card {
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner, .flip-card.active .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            backface-visibility: hidden;
+        }
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Hero Section -->
+    <header class="text-center py-16 px-4 relative">
+        <div class="absolute top-4 left-4 text-pink-500 text-3xl heart-float">❤️</div>
+        <div class="absolute top-10 right-8 text-pink-400 text-2xl heart-float" style="animation-delay: 1s;">💖</div>
+        
+        <h1 class="romantic-font text-6xl md:text-7xl text-pink-600 mb-4 drop-shadow-md">¡Feliz Cumpleaños, Mi Amor!</h1>
+        <p class="text-lg md:text-xl font-light text-gray-700 max-w-xl mx-auto mb-6">
+            Este pequeño rincón digital es solo una muestra de todo lo que te amo y lo feliz que me hace tenerte en mi vida.
+        </p>
+        <button onclick="lanzarConfeti()" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+            ¡Toca para celebrar! 🎉
+        </button>
+    </header>
+
+    <!-- Nuestra Historia (Timeline) -->
+    <section class="max-w-2xl mx-auto px-4 py-8 w-full">
+        <h2 class="romantic-font text-4xl text-center text-pink-600 mb-8">Nuestros Momentos Especiales</h2>
+        <div class="border-l-4 border-pink-300 ml-4 pl-6 space-y-8">
+            <div class="relative">
+                <span class="absolute -left-[35px] top-0 bg-pink-500 w-5 h-5 rounded-full border-4 border-white"></span>
+                <h3 class="font-semibold text-lg text-pink-700">El día que nos conocimos</h3>
+                <p class="text-sm text-gray-600 mt-1">El inicio de la mejor aventura de mi vida.</p>
+            </div>
+            <div class="relative">
+                <span class="absolute -left-[35px] top-0 bg-pink-500 w-5 h-5 rounded-full border-4 border-white"></span>
+                <h3 class="font-semibold text-lg text-pink-700">Nuestra primera cita</h3>
+                <p class="text-sm text-gray-600 mt-1">Nervios, risas y la certeza de que quería seguir viéndote.</p>
+            </div>
+            <div class="relative">
+                <span class="absolute -left-[35px] top-0 bg-pink-500 w-5 h-5 rounded-full border-4 border-white"></span>
+                <h3 class="font-semibold text-lg text-pink-700">Hoy y siempre</h3>
+                <p class="text-sm text-gray-600 mt-1">Construyendo recuerdos inolvidables juntos cada día.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Razones por las que te amo (Flip Cards) -->
+    <section class="max-w-4xl mx-auto px-4 py-12 w-full">
+        <h2 class="romantic-font text-4xl text-center text-pink-600 mb-8">Razones por las que te amo</h2>
+        <p class="text-center text-sm text-gray-500 mb-6">Toca cada tarjeta para descubrir un motivo</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Tarjeta 1 -->
+            <div class="flip-card h-48 cursor-pointer" onclick="this.classList.toggle('active')">
+                <div class="flip-card-inner relative w-full h-full text-center rounded-2xl shadow-md">
+                    <div class="flip-card-front absolute w-full h-full glass rounded-2xl flex flex-col items-center justify-center p-6">
+                        <span class="text-3xl mb-2">✨</span>
+                        <h3 class="font-semibold text-pink-700">Tu sonrisa</h3>
+                    </div>
+                    <div class="flip-card-back absolute w-full h-full bg-pink-500 text-white rounded-2xl flex items-center justify-center p-6">
+                        <p class="text-sm">Tiene el poder de alegrar incluso mis días más grises.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="flip-card h-48 cursor-pointer" onclick="this.classList.toggle('active')">
+                <div class="flip-card-inner relative w-full h-full text-center rounded-2xl shadow-md">
+                    <div class="flip-card-front absolute w-full h-full glass rounded-2xl flex flex-col items-center justify-center p-6">
+                        <span class="text-3xl mb-2">💫</span>
+                        <h3 class="font-semibold text-pink-700">Tu bondad</h3>
+                    </div>
+                    <div class="flip-card-back absolute w-full h-full bg-pink-500 text-white rounded-2xl flex items-center justify-center p-6">
+                        <p class="text-sm">La forma en que tratas al mundo me inspira a ser mejor persona.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="flip-card h-48 cursor-pointer" onclick="this.classList.toggle('active')">
+                <div class="flip-card-inner relative w-full h-full text-center rounded-2xl shadow-md">
+                    <div class="flip-card-front absolute w-full h-full glass rounded-2xl flex flex-col items-center justify-center p-6">
+                        <span class="text-3xl mb-2">🥰</span>
+                        <h3 class="font-semibold text-pink-700">Nuestra complicidad</h3>
+                    </div>
+                    <div class="flip-card-back absolute w-full h-full bg-pink-500 text-white rounded-2xl flex items-center justify-center p-6">
+                        <p class="text-sm">Contigo puedo ser 100% yo mismo sin filtros ni miedos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería / Álbum de fotos estilo Polaroid -->
+    <section class="max-w-4xl mx-auto px-4 py-12 w-full text-center">
+        <h2 class="romantic-font text-4xl text-pink-600 mb-8">Nuestros Recuerdos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-white p-4 pb-6 rounded shadow-md transform rotate-1 hover:rotate-0 transition">
+                <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-400 text-sm overflow-hidden">
+                    <!-- Puedes cambiar este enlace por una foto tuya subida a GitHub -->
+                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80" alt="Foto recuerdo" class="w-full h-full object-cover">
+                </div>
+                <p class="romantic-font text-xl text-gray-700 mt-3">Mi lugar favorito</p>
+            </div>
+            <div class="bg-white p-4 pb-6 rounded shadow-md transform -rotate-1 hover:rotate-0 transition">
+                <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-400 text-sm overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80" alt="Foto recuerdo" class="w-full h-full object-cover">
+                </div>
+                <p class="romantic-font text-xl text-gray-700 mt-3">Momentos felices</p>
+            </div>
+            <div class="bg-white p-4 pb-6 rounded shadow-md transform rotate-2 hover:rotate-0 transition">
+                <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-400 text-sm overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=600&q=80" alt="Foto recuerdo" class="w-full h-full object-cover">
+                </div>
+                <p class="romantic-font text-xl text-gray-700 mt-3">Te amo muchísimo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Cupones de Amor Interactivos -->
+    <section class="max-w-2xl mx-auto px-4 py-12 w-full text-center">
+        <h2 class="romantic-font text-4xl text-pink-600 mb-6">Cupones Canjeables</h2>
+        <p class="text-sm text-gray-600 mb-8">Toca un cupón para reclamarlo cuando quieras:</p>
+        <div class="space-y-4">
+            <div onclick="canjearCupon(this, 'Valido por una cena romántica a elección')" class="glass p-4 rounded-xl shadow cursor-pointer hover:bg-pink-50 transition border-l-4 border-pink-500">
+                <h3 class="font-semibold text-pink-700">🎟️ Cupón 1: Cena Romántica</h3>
+                <p class="text-xs text-gray-500 mt-1">Toca para canjear</p>
+            </div>
+            <div onclick="canjearCupon(this, 'Valido por un masaje relajante completo')" class="glass p-4 rounded-xl shadow cursor-pointer hover:bg-pink-50 transition border-l-4 border-pink-500">
+                <h3 class="font-semibold text-pink-700">🎟️ Cupón 2: Masaje Relajante</h3>
+                <p class="text-xs text-gray-500 mt-1">Toca para canjear</p>
+            </div>
+            <div onclick="canjearCupon(this, 'Valido por una maratón de tu película favorita con golosinas')" class="glass p-4 rounded-xl shadow cursor-pointer hover:bg-pink-50 transition border-l-4 border-pink-500">
+                <h3 class="font-semibold text-pink-700">🎟️ Cupón 3: Noche de Película & Snacks</h3>
+                <p class="text-xs text-gray-500 mt-1">Toca para canjear</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-sm text-gray-500">
+        <p>Hecho con todo mi amor para ti ❤️</p>
+    </footer>
+
+    <script>
+        function lanzarConfeti() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#ec4899', '#f472b6', '#fbcfe8', '#fda4af']
+            });
+        }
+
+        function canjearCupon(elemento, mensaje) {
+            elemento.style.background = '#fce7f3';
+            elemento.querySelector('h3').innerHTML += ' ✅ (¡Canjeado!)';
+            alert('¡Cupón canjeado con éxito!\n\n' + mensaje + '\n\n(Reclámaselo a tu novio en persona 😉)');
+        }
+    </script>
+</body>
+</html>
